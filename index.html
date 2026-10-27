@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usman Atta | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Usman Atta, a Frontend Developer in Islamabad, Pakistan building responsive websites with HTML, JavaScript and Tailwind CSS, using an AI-assisted workflow with Claude and GitHub Copilot."
+    />
+    <meta name="theme-color" content="#f4f0e6" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Usman Atta | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Responsive websites built with HTML, JavaScript and Tailwind CSS, with an AI-assisted development workflow."
+    />
+    <!-- Add og:image only once a real, hosted image exists. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body id="top">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+    >
+      Skip to main content
+    </a>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-sm">
+      <div class="wrap flex h-16 items-center justify-between">
+        <a href="#top" class="font-display text-xl font-bold tracking-tight">
+          Usman Atta<span class="text-accent">.</span>
+        </a>
+
+        <nav aria-label="Primary" class="hidden md:block">
+          <ul class="flex items-center gap-1">
+            <li><a data-nav-link href="#about" class="rounded px-3 py-2 text-sm font-medium text-muted decoration-accent decoration-2 underline-offset-8 hover:text-ink aria-[current=true]:text-ink aria-[current=true]:underline">About</a></li>
+            <li><a data-nav-link href="#skills" class="rounded px-3 py-2 text-sm font-medium text-muted decoration-accent decoration-2 underline-offset-8 hover:text-ink aria-[current=true]:text-ink aria-[current=true]:underline">Skills</a></li>
+            <li><a data-nav-link href="#projects" class="rounded px-3 py-2 text-sm font-medium text-muted decoration-accent decoration-2 underline-offset-8 hover:text-ink aria-[current=true]:text-ink aria-[current=true]:underline">Projects</a></li>
+            <li><a data-nav-link href="#experience" class="rounded px-3 py-2 text-sm font-medium text-muted decoration-accent decoration-2 underline-offset-8 hover:text-ink aria-[current=true]:text-ink aria-[current=true]:underline">Experience</a></li>
+            <li><a data-nav-link href="#education" class="rounded px-3 py-2 text-sm font-medium text-muted decoration-accent decoration-2 underline-offset-8 hover:text-ink aria-[current=true]:text-ink aria-[current=true]:underline">Education</a></li>
+            <li><a data-nav-link href="#contact" class="rounded px-3 py-2 text-sm font-medium text-muted decoration-accent decoration-2 underline-offset-8 hover:text-ink aria-[current=true]:text-ink aria-[current=true]:underline">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          id="menu-button"
+          type="button"
+          class="inline-flex h-11 w-11 items-center justify-center border border-line md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path d="M3 6h14M3 10h14M3 14h14" />
+          </svg>
+        </button>
+      </div>
+
+      <nav id="mobile-menu" aria-label="Mobile" hidden class="border-t border-line bg-paper md:hidden">
+        <ul class="wrap py-2">
+          <li><a data-nav-link href="#about" class="block border-b border-line py-3 text-base font-medium aria-[current=true]:text-accent">About</a></li>
+          <li><a data-nav-link href="#skills" class="block border-b border-line py-3 text-base font-medium aria-[current=true]:text-accent">Skills</a></li>
+          <li><a data-nav-link href="#projects" class="block border-b border-line py-3 text-base font-medium aria-[current=true]:text-accent">Projects</a></li>
+          <li><a data-nav-link href="#experience" class="block border-b border-line py-3 text-base font-medium aria-[current=true]:text-accent">Experience</a></li>
+          <li><a data-nav-link href="#education" class="block border-b border-line py-3 text-base font-medium aria-[current=true]:text-accent">Education</a></li>
+          <li><a data-nav-link href="#contact" class="block py-3 text-base font-medium aria-[current=true]:text-accent">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ===================== HERO ===================== -->
+      <section aria-labelledby="hero-title" class="wrap grid items-center gap-14 pb-20 pt-12 sm:pt-16 lg:grid-cols-12 lg:gap-x-16 lg:pb-28 lg:pt-24">
+        <div class="lg:col-span-7">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">Portfolio · Islamabad, Pakistan</p>
+
+          <h1 id="hero-title" class="mt-5 font-display text-6xl font-bold leading-[0.92] tracking-tight sm:text-8xl lg:text-9xl">
+            Usman<br />Atta
+          </h1>
+
+          <p class="mt-6 font-display text-2xl italic text-accent sm:text-3xl">Frontend Developer</p>
+
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted">
+            I build responsive, modern websites using HTML, JavaScript, and Tailwind CSS, combining thoughtful frontend development with AI-assisted coding workflows.
+          </p>
+
+          <div class="mt-9 flex flex-wrap items-center gap-4">
+            <a href="#projects" class="inline-flex min-h-12 items-center bg-ink px-6 text-sm font-semibold text-paper transition-colors duration-200 hover:bg-accent">
+              Explore My Work
+            </a>
+            <a href="#contact" class="inline-flex min-h-12 items-center border border-ink px-6 text-sm font-semibold transition-colors duration-200 hover:bg-ink hover:text-paper">
+              Get in Touch
+            </a>
+          </div>
+
+          <p class="mt-8 text-sm text-muted">
+            <a href="https://github.com/usmanattathegoat" target="_blank" rel="noopener noreferrer" class="font-medium text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-accent">
+              github.com/usmanattathegoat<span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </p>
+        </div>
+
+        <figure class="mx-auto w-full max-w-sm lg:col-span-5">
+          <img
+            src="./images/usman-atta.jpg"
+            alt="Portrait of Usman Atta"
+            width="288"
+            height="275"
+            fetchpriority="high"
+            decoding="async"
+            class="block w-full border border-ink"
+          />
+        </figure>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section id="about" aria-labelledby="about-title" class="border-t border-line py-20 lg:py-28">
+        <div class="wrap grid gap-12 lg:grid-cols-12">
+          <div class="reveal lg:col-span-5">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">01 — About</p>
+            <h2 id="about-title" class="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
+              Frontend work, shaped by a wider professional background.
+            </h2>
+          </div>
+
+          <div class="reveal space-y-5 text-lg leading-relaxed text-muted lg:col-span-7">
+            <p>
+              I'm a frontend developer who builds responsive websites with HTML, JavaScript and Tailwind CSS. My code is versioned on GitHub and deployed on Vercel.
+            </p>
+            <p>
+              I use Claude and GitHub Copilot daily to write code and build websites faster, and I treat prompt engineering as part of the craft. AI output is a starting point that still needs reading, testing and refining.
+            </p>
+            <p>
+              I'm currently in daily, hands-on software development training at Timeline Digital in Islamabad, covering web development, web application development, mobile application development, software development and digital marketing. Building a project portfolio is part of that training.
+            </p>
+            <p>
+              Before moving into development I worked in business development and research and earned a master's degree in project management, which informs how I plan work and communicate.
+            </p>
+
+            <dl class="grid gap-x-8 gap-y-5 border-t border-line pt-8 text-base sm:grid-cols-2">
+              <div>
+                <dt class="font-mono text-xs uppercase tracking-widest text-accent">Location</dt>
+                <dd class="mt-1 text-ink">Islamabad, Pakistan</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-xs uppercase tracking-widest text-accent">Current focus</dt>
+                <dd class="mt-1 text-ink">Frontend and software development</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-xs uppercase tracking-widest text-accent">Workflow</dt>
+                <dd class="mt-1 text-ink">GitHub and Vercel</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-xs uppercase tracking-widest text-accent">Learning</dt>
+                <dd class="mt-1 text-ink">Web, web app, mobile app and software development; digital marketing</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SKILLS ===================== -->
+      <section id="skills" aria-labelledby="skills-title" class="border-t border-line bg-surface py-20 lg:py-28">
+        <div class="wrap">
+          <div class="reveal max-w-2xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">02 — Skills</p>
+            <h2 id="skills-title" class="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
+              The toolkit I build with.
+            </h2>
+          </div>
+
+          <div class="mt-12 grid gap-6 lg:grid-cols-12">
+            <!-- Primary: Frontend -->
+            <article class="reveal border border-ink bg-ink p-7 text-paper lg:col-span-7 lg:row-span-2 lg:p-10">
+              <p class="font-mono text-xs text-accent-light">01</p>
+              <h3 class="mt-2 font-display text-3xl font-semibold">Frontend Development</h3>
+              <ul class="mt-8 divide-y divide-paper/20 text-lg">
+                <li class="py-3">HTML</li>
+                <li class="py-3">JavaScript</li>
+                <li class="py-3">Tailwind CSS</li>
+                <li class="py-3">Responsive design</li>
+                <li class="py-3">UI animation using Tailwind transition utilities</li>
+              </ul>
+            </article>
+
+            <!-- AI -->
+            <article class="reveal border border-ink bg-paper p-7 lg:col-span-5">
+              <p class="font-mono text-xs text-accent">02</p>
+              <h3 class="mt-2 font-display text-2xl font-semibold">AI-Assisted Development</h3>
+              <ul class="mt-5 space-y-2 text-muted">
+                <li>Claude (Opus 5.5 and Sonnet, as listed in the CV)</li>
+                <li>GitHub Copilot</li>
+                <li>Prompt engineering</li>
+                <li>AI-assisted code writing</li>
+                <li>AI-assisted website building</li>
+              </ul>
+            </article>
+
+            <!-- Tools -->
+            <article class="reveal border border-ink bg-paper p-7 lg:col-span-5">
+              <p class="font-mono text-xs text-accent">03</p>
+              <h3 class="mt-2 font-display text-2xl font-semibold">Tools and Deployment</h3>
+              <ul class="mt-5 flex flex-wrap gap-2 text-sm">
+                <li class="border border-ink px-3 py-1.5">Git</li>
+                <li class="border border-ink px-3 py-1.5">GitHub</li>
+                <li class="border border-ink px-3 py-1.5">VS Code</li>
+                <li class="border border-ink px-3 py-1.5">Vercel deployment</li>
+              </ul>
+            </article>
+
+            <!-- Complementary -->
+            <article class="reveal border border-dashed border-muted p-7 lg:col-span-12">
+              <div class="grid gap-6 lg:grid-cols-12 lg:items-center">
+                <div class="lg:col-span-4">
+                  <p class="font-mono text-xs text-muted">Complementary</p>
+                  <h3 class="mt-2 font-display text-2xl font-semibold">Broader Professional Skills</h3>
+                </div>
+                <ul class="flex flex-wrap gap-2 text-sm lg:col-span-8">
+                  <li class="bg-paper px-3 py-1.5">Project management</li>
+                  <li class="bg-paper px-3 py-1.5">Research and analysis</li>
+                  <li class="bg-paper px-3 py-1.5">Business development</li>
+                  <li class="bg-paper px-3 py-1.5">Client relationship management</li>
+                  <li class="bg-paper px-3 py-1.5">Market analysis</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PROJECTS ===================== -->
+      <section id="projects" aria-labelledby="projects-title" class="py-20 lg:py-28">
+        <div class="wrap">
+          <div class="reveal flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div class="max-w-2xl">
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">03 — Projects</p>
+              <h2 id="projects-title" class="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
+                Selected work.
+              </h2>
+            </div>
+            <p class="max-w-sm text-sm text-muted">
+              Project case studies are being prepared. In the meantime, you can explore my work on GitHub.
+            </p>
+          </div>
+
+          <div class="reveal mt-12 border border-ink bg-surface p-8 sm:p-10">
+            <p class="font-mono text-xs uppercase tracking-widest text-accent">Work in progress</p>
+            <h3 class="mt-3 font-display text-3xl font-semibold">Real projects, documented with care.</h3>
+            <p class="mt-3 max-w-2xl leading-relaxed text-muted">
+              I’m preparing project case studies with working demos and source code. Visit my GitHub profile for current repositories.
+            </p>
+            <a href="https://github.com/usmanattathegoat" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex min-h-11 items-center bg-ink px-5 text-sm font-semibold text-paper transition-colors duration-200 hover:bg-accent">
+              Visit GitHub<span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== AI WORKFLOW ===================== -->
+      <section id="workflow" aria-labelledby="workflow-title" class="on-dark bg-ink py-20 text-paper lg:py-28">
+        <div class="wrap">
+          <div class="reveal max-w-2xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent-light">04 — AI-Assisted Workflow</p>
+            <h2 id="workflow-title" class="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
+              AI helps me move faster. Review keeps the work sound.
+            </h2>
+            <p class="mt-5 text-lg leading-relaxed text-line">
+              I use Claude and GitHub Copilot daily, guided by prompt engineering, alongside HTML, JavaScript and Tailwind CSS, with GitHub for version control and Vercel for deployment. Generated code still has to be read, tested and refined before it ships.
+            </p>
+          </div>
+
+          <ol class="mt-12 grid gap-px border border-paper/25 bg-paper/25 sm:grid-cols-2 lg:grid-cols-6">
+            <li class="reveal bg-ink p-5"><span class="font-mono text-xs text-accent-light">01</span><p class="mt-3 font-display text-xl">Plan</p></li>
+            <li class="reveal bg-ink p-5"><span class="font-mono text-xs text-accent-light">02</span><p class="mt-3 font-display text-xl">Prompt</p></li>
+            <li class="reveal bg-ink p-5"><span class="font-mono text-xs text-accent-light">03</span><p class="mt-3 font-display text-xl">Build</p></li>
+            <li class="reveal bg-ink p-5"><span class="font-mono text-xs text-accent-light">04</span><p class="mt-3 font-display text-xl">Review</p></li>
+            <li class="reveal bg-ink p-5"><span class="font-mono text-xs text-accent-light">05</span><p class="mt-3 font-display text-xl">Refine</p></li>
+            <li class="reveal bg-ink p-5"><span class="font-mono text-xs text-accent-light">06</span><p class="mt-3 font-display text-xl">Deploy</p></li>
+          </ol>
+          <p class="mt-4 font-mono text-xs text-line">An illustrative workflow, not a record of any specific project.</p>
+        </div>
+      </section>
+
+      <!-- ===================== EXPERIENCE ===================== -->
+      <section id="experience" aria-labelledby="experience-title" class="py-20 lg:py-28">
+        <div class="wrap">
+          <div class="reveal max-w-2xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">05 — Experience</p>
+            <h2 id="experience-title" class="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
+              Professional history.
+            </h2>
+          </div>
+
+          <ol class="mt-12 border-t border-ink">
+            <li class="reveal grid gap-4 border-b border-line py-8 md:grid-cols-12 md:gap-8">
+              <div class="md:col-span-4">
+                <p class="font-mono text-sm text-accent">2025–Present</p>
+                <p class="mt-1 text-sm text-muted">Self-Employed</p>
+              </div>
+              <div class="md:col-span-8">
+                <h3 class="font-display text-2xl font-semibold">Independent Forex Trader</h3>
+                <p class="mt-3 text-muted">
+                  Trading currency pairs and gold (XAU/USD) through an Exness account using Smart Money Concept analysis.
+                </p>
+                <ul class="mt-4 flex flex-wrap gap-2 text-xs">
+                  <li class="border border-line px-2.5 py-1">Break of structure (BOS)</li>
+                  <li class="border border-line px-2.5 py-1">Change of character (CHoCH)</li>
+                  <li class="border border-line px-2.5 py-1">Order blocks</li>
+                  <li class="border border-line px-2.5 py-1">Liquidity sweeps</li>
+                  <li class="border border-line px-2.5 py-1">Fair value gaps</li>
+                  <li class="border border-line px-2.5 py-1">Premium and discount zones</li>
+                  <li class="border border-line px-2.5 py-1">Supply and demand zones</li>
+                  <li class="border border-line px-2.5 py-1">Multi-timeframe analysis</li>
+                  <li class="border border-line px-2.5 py-1">Stop-losses</li>
+                  <li class="border border-line px-2.5 py-1">Risk-reward ratios</li>
+                  <li class="border border-line px-2.5 py-1">Position sizing</li>
+                  <li class="border border-line px-2.5 py-1">Trading journal</li>
+                  <li class="border border-line px-2.5 py-1">Backtesting</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="reveal grid gap-4 border-b border-line py-8 md:grid-cols-12 md:gap-8">
+              <div class="md:col-span-4">
+                <p class="font-mono text-sm text-accent">2021–2025</p>
+                <p class="mt-1 text-sm text-muted">Glasgow, United Kingdom</p>
+              </div>
+              <div class="md:col-span-8">
+                <h3 class="font-display text-2xl font-semibold">Business Development Manager</h3>
+                <p class="text-sm font-medium">Retro Designer Wear</p>
+                <ul class="mt-3 list-disc space-y-1 pl-5 text-muted marker:text-accent">
+                  <li>Led growth strategy, partnerships, and revenue expansion.</li>
+                  <li>Managed client relationships.</li>
+                  <li>Streamlined operations using market analysis.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="reveal grid gap-4 border-b border-line py-8 md:grid-cols-12 md:gap-8">
+              <div class="md:col-span-4">
+                <p class="font-mono text-sm text-accent">2019–2020</p>
+                <p class="mt-1 text-sm text-muted">Islamabad, Pakistan</p>
+              </div>
+              <div class="md:col-span-8">
+                <h3 class="font-display text-2xl font-semibold">Business Development Role</h3>
+                <p class="text-sm font-medium">Askari Bank Limited</p>
+                <ul class="mt-3 list-disc space-y-1 pl-5 text-muted marker:text-accent">
+                  <li>Led business growth initiatives.</li>
+                  <li>Expanded client portfolios and drove customer acquisition.</li>
+                  <li>Managed key banking relationships.</li>
+                  <li>Conducted market analysis to strengthen competitive positioning.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="reveal grid gap-4 border-b border-line py-8 md:grid-cols-12 md:gap-8">
+              <div class="md:col-span-4">
+                <p class="font-mono text-sm text-accent">2016–2018</p>
+                <p class="mt-1 text-sm text-muted">Islamabad, Pakistan</p>
+              </div>
+              <div class="md:col-span-8">
+                <h3 class="font-display text-2xl font-semibold">Researcher</h3>
+                <p class="text-sm font-medium">National Defence University</p>
+                <ul class="mt-3 list-disc space-y-1 pl-5 text-muted marker:text-accent">
+                  <li>Analyzed data.</li>
+                  <li>Developed strategic insights for decision-making.</li>
+                  <li>Authored reports, policy briefs, and academic papers.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===================== EDUCATION ===================== -->
+      <section id="education" aria-labelledby="education-title" class="border-t border-line bg-surface py-20 lg:py-28">
+        <div class="wrap">
+          <div class="reveal max-w-2xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">06 — Education and Training</p>
+            <h2 id="education-title" class="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
+              Learning, past and present.
+            </h2>
+          </div>
+
+          <div class="mt-12 grid gap-6 lg:grid-cols-2">
+            <article class="reveal border border-ink bg-paper p-7">
+              <p class="font-mono text-sm text-accent">2026–Present</p>
+              <p class="mt-3 inline-block bg-ink px-2 py-0.5 font-mono text-xs uppercase tracking-widest text-paper">Ongoing</p>
+              <h3 class="mt-3 font-display text-2xl font-semibold">Software Development Training</h3>
+              <p class="text-sm font-medium">Timeline Digital, Islamabad, Pakistan</p>
+              <p class="mt-3 text-muted">Daily, hands-on training in:</p>
+              <ul class="mt-2 list-disc space-y-1 pl-5 text-muted marker:text-accent">
+                <li>Web development</li>
+                <li>Web application development</li>
+                <li>Mobile application development</li>
+                <li>Software development</li>
+                <li>Digital marketing</li>
+              </ul>
+            </article>
+
+            <article class="reveal border border-ink bg-paper p-7">
+              <p class="font-mono text-sm text-accent">2015–2018</p>
+              <h3 class="mt-3 font-display text-2xl font-semibold">Master of Science in Project Management</h3>
+              <p class="text-sm font-medium">National Defence University, Islamabad</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact" aria-labelledby="contact-title" class="on-dark bg-ink py-20 text-paper lg:py-28">
+        <div class="wrap grid gap-12 lg:grid-cols-12">
+          <div class="reveal lg:col-span-7">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent-light">07 — Contact</p>
+            <h2 id="contact-title" class="mt-4 font-display text-5xl font-semibold leading-[1.05] sm:text-6xl">
+              Let's talk about your next website.
+            </h2>
+            <a
+              href="mailto:usman14atta72@gmail.com"
+              class="mt-8 inline-block break-all font-display text-2xl text-accent-light underline decoration-2 underline-offset-8 transition-colors duration-200 hover:text-paper sm:text-4xl"
+            >
+              usman14atta72@gmail.com
+            </a>
+          </div>
+
+          <dl class="reveal space-y-6 lg:col-span-5 lg:pt-10">
+            <div class="border-t border-paper/25 pt-4">
+              <dt class="font-mono text-xs uppercase tracking-widest text-accent-light">Phone</dt>
+              <dd class="mt-1 text-lg">
+                <a href="tel:+923485363808" class="inline-block py-1 underline decoration-accent-light underline-offset-4 hover:text-accent-light">+92 348 5363808</a>
+              </dd>
+            </div>
+            <div class="border-t border-paper/25 pt-4">
+              <dt class="font-mono text-xs uppercase tracking-widest text-accent-light">Location</dt>
+              <dd class="mt-1 text-lg">Islamabad, Pakistan</dd>
+            </div>
+            <div class="border-t border-paper/25 pt-4">
+              <dt class="font-mono text-xs uppercase tracking-widest text-accent-light">GitHub</dt>
+              <dd class="mt-1 text-lg">
+                <a href="https://github.com/usmanattathegoat" target="_blank" rel="noopener noreferrer" class="inline-block py-1 underline decoration-accent-light underline-offset-4 hover:text-accent-light">
+                  github.com/usmanattathegoat<span class="sr-only"> (opens in a new tab)</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="border-t border-line">
+      <div class="wrap flex flex-col gap-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+        <p>
+          © <span id="year">2026</span> <span class="font-medium text-ink">Usman Atta</span> · Frontend Developer
+        </p>
+        <ul class="flex items-center gap-6">
+          <li>
+            <a href="https://github.com/usmanattathegoat" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-11 items-center underline underline-offset-4 hover:text-accent">
+              GitHub<span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#top" class="inline-flex min-h-11 items-center underline underline-offset-4 hover:text-accent">Back to top</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
